@@ -1,0 +1,76 @@
+.adopteme {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  .title {
+    color: black;
+    font-family: var(--basic_font);
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 25px;
+    // margin-right: 65vw;
+  }
+  .list {
+    // overflow: auto;
+    max-width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    .card {
+      width: 15rem;
+      height: 15rem;
+      border-radius: 5px;
+      .image {
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 240px;
+          height: 160px;
+          border-radius: 5px;
+          width: 100%;
+          transition: all 0.3s;
+          &:hover {
+            width: 102%;
+            height: 162px;
+          }
+        }
+        .info {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-flow: column nowrap;
+          margin: 15px 0 0 15px;
+          p {
+            color: white;
+            text-shadow: 1px 3px 3px black;
+            font-family: var(--basic_font);
+            font-weight: 600;
+          }
+        }
+      }
+      .adopme {
+        text-align: center;
+        width: 100%;
+        background: orangered;
+        border-radius: 5px;
+        height: 2rem;
+        line-height: 2rem;
+        a {
+          text-decoration: none;
+          cursor: pointer;
+          border: none;
+          color: white;
+          height: 2rem;
+          font-family: var(--basic_font);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

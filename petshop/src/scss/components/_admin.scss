@@ -1,0 +1,121 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  .add_animals {
+    background: black;
+    color: white;
+    text-decoration: none;
+    top: 25px;
+    left: 25px;
+    padding: 15px 55px 15px 55px;
+    position: absolute;
+    border-radius: 5px;
+  }
+  .contentTable {
+    margin-top: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    width: 100%;
+    .TableHead {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row nowrap;
+      // background: var(--colorBlack);
+      height: 100px;
+      .contentTableHead {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 17%;
+        p {
+          color: #000;
+          font-size: 20px;
+          font-weight: 400;
+          font-family: var(--fonts);
+        }
+      }
+    }
+    .TableBody {
+      margin-top: 25px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: column nowrap;
+      .corp {
+        margin-bottom: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row nowrap;
+        border-bottom: 2px solid #000;
+        margin-top: 10px;
+        .contentTableBody {
+          margin-bottom: 25px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 17%;
+          &.btnD {
+            position: relative;
+            height: 100%;
+          }
+          &.admin {
+            #deleteUser {
+              background: #42f551;
+              &:hover {
+                color: white;
+                background: var(--colorRedB);
+              }
+            }
+          }
+          p {
+            color: var(--colorBlack);
+            font-size: 17px;
+            font-weight: 300;
+            font-family: var(--fonts);
+          }
+          #deleteUser,
+          #editUser {
+            cursor: pointer;
+            text-decoration: none;
+            background: red;
+            padding: 10px 25px 10px 25px;
+            border-radius: 10px;
+            overflow: hidden;
+            font-size: 1em;
+            font-weight: 400;
+            color: #fff;
+            font-family: var(--fonts);
+            transition: color 0.3s, background 0.4s;
+            &:hover {
+              color: white;
+              background: #000;
+            }
+          }
+          #editUser {
+            margin-left: 14px;
+            background: orangered;
+            &:hover {
+              color: white;
+              background: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
